@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  display: flex;
+  user-select:none;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #fbb034 0%, #ffdd00 100%) no-repeat
+    #fbb034;
+  background-size: 100% 1000px;
+}
+* {
+  font-family: "Langar", cursive;
+  letter-spacing: 2px;
+}
+input {
+  border-radius: 10px;
+  border: 2px solid #fbb034;
+}
+.input-box {
+  padding: 10px;
+  width: 300px;
+  font-size: 20px;
+}
+span {
+  font-size: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  padding: 50px 0;
+}
