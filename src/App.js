@@ -114,18 +114,16 @@ export default function App() {
     "⭐": "Star",
     "🌟": "Glowing Star"
   };
-  var emojisWeHave = Object.keys(userDictionary);
-  var [meaning, setMeaning] = useState("");
-  function changeHandler(event) {
+  let emojisWeHave = Object.keys(userDictionary);
+  let [meaning, setMeaning] = useState("");
+  const changeHandler = event => {
     userInput = event.target.value;
-    var pickEmoji = userDictionary[userInput];
-    if (pickEmoji === undefined) {
-      pickEmoji = "We don't have this emoji";
-    }
+    let pickEmoji = userDictionary[userInput];
+    if (pickEmoji === undefined) pickEmoji = "We don't have this emoji";
     setMeaning(pickEmoji);
   }
-  function emojiClickHandler(item) {
-    var pickEmoji = userDictionary[item];
+  const emojiClickHandler = item => {
+    let pickEmoji = userDictionary[item];
     setMeaning(pickEmoji);
   }
   return (
